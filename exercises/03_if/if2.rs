@@ -11,6 +11,7 @@ fn foo_if_fizz(fizzish: &str) -> &str {
 
 fn main() {
     // You can optionally experiment here.
+    println!("{}",foo_if_fizz("fizz"))
 }
 
 // TODO: Read the tests to understand the desired behavior.

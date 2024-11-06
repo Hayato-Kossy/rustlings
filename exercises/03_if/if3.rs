@@ -24,6 +24,8 @@ fn animal_habitat(animal: &str) -> &str {
 
 fn main() {
     // You can optionally experiment here.
+    println!("{}",animal_habitat("fizz"))
+
 }
 
 // Don't change the tests!
