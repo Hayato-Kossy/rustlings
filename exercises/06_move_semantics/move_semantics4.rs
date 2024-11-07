@@ -9,9 +9,10 @@ mod tests {
     #[test]
     fn move_semantics4() {
         let mut x = Vec::new();
+        // 同時に複数の可変参照は持てない
         let y = &mut x;
-        let z = &mut x;
         y.push(42);
+        let z = &mut x;
         z.push(13);
         assert_eq!(x, [42, 13]);
     }
